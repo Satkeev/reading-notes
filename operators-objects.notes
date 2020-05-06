@@ -1,0 +1,67 @@
+###  COMPARISON OPERATORS   
+
+>JAVASCRIPT c04/js/comparison-operator.js  
+var pass = 50; II Pass mark var score = 90; II Score   
+II Check if the user has passed var hasPassed = score >= pass;   
+II W rite the message into the page var el = document.getElementByld('answer '); 
+e1  . textContent = 'Leve 1 passed: ' + has Passed;   
+Level passed: true   
+>At the most basic level, you can evaluate two variables using a comparison  
+operator to return a t rue or f alse value.   
+In this example, a user is taking a test, and the script   
+tells the user whether they have passed this round of the test.   
+The example starts by setting two variables: 1. pass to hold the pass mark 2. score to hold the users score   
+To see if the user has passed, a comparison operator checks whether scor e is greater than or equal to pass. 
+The result will be true or false, and is stored in a variable called has Passed. On the next line,  
+the result is written to the screen.   
+The last two lines select the element whose id attribute has a value of answer, and   
+then updates its contents. You will learn more about this technique  
+
+### SHORT CIRCUIT VALUES  
+
+>Logical operators are processed left to right. They short-circuit (stop) as soon as they have a result   
+- but they return the value that stopped the processing (not necessarily true or fa 1 se).   
+On line 1, the variable artist is given a value of Rembrandt. On line 2, if the variable a rt i st has a value,   
+then art i stA will be given the same value as artist (because a non-empty string is truthy).   
+var artist = 'Rembrandt ' ; var arti stA = (artist 11 ' Unknown') ;   
+If the string is empty (see below), arti stA becomes a string 'Unknown' .   
+var artist = ' ' ; varartistA= (ar tist II ' Unknown');   
+You could even create an empty object if artist does not have a value:
+var artist= ''; var artistA = (arti st I I {}) ;   
+Here are three values. If any one of them is considered truthy,   
+the code inside the if statement will execute. When the script encounters val ueB in the logical operator,   
+it will short circuit because the number 1 is considered truthy and the subsequent code block is executed.   
+valueA = O; valueB = 1; valueC = 2;   
+if (valueA I I valueB II valueC) { // Do somet hi ng here   
+This technique could also be used to check for the existence of elements within a page, as shown on p168.   
+Logical operators will not always return true or false, because: 
+• They return the value that stopped processing. • That value might have been treated as truthy   
+or falsy although it was not a Boolean.   
+>Programmers use this creatively (for example, to set values for variables or even create objects). 
+As soon as a truthy value is found, the remaining options are not checked. Therefore, experienced programmers often:   
+• Put the code most likely to return true first in OR operations, and false answers first in AND operations.   
+• Place the options requiring the most processing powe.r last, just in case another value returns true 
+
+### OBJECTS 
+>BASIC EFFECTS 
+>In this example, it appears as if list items are faded into view when the page loads.   
+Each item is faded out when it is clicked on.   
+JAVASCRIPT   
+In fact, the items are loaded normally along with the rest of the page, but then immediately hidden using JavaScript.   
+$(function() { $('h2').hide().slideDown(); var $li = $('li'); 
+$li.hide().each{function(index) { 2 $(this).delay(700 * index) .fadeln(?OO); } ) ;   
+$li.on('click', function() $(this) .fade0ut(700); } ) ; } ) ;   
+1. In the first statement, the selector picks the <h2> element and hides it so that it   
+can be animated in. The chosen effect to show the heading is the • s l i deDown () method.   
+Note how the methods are chained; there is no need to make a new selection for each of the tasks.    
+>2. The second part causes the list of items to appear one by one. Again, before they can be faded in,   
+they must be hidden. Then the • each () method is used to loop through each of the <l i> elements in turn. 
+You can see that this triggers an anonymous function.   
+Once hidden, only then are they faded into view. This is so they will still be visible in browsers   
+that do not have JavaScript enabled.   
+Inside the anonymous function, the index property acts as a counter indicating which <l i > element is the current one.  
+The .delay() method creates a pause before the list item is shown. The delay is set, multiplying the index number  
+by 700 ms (otherwise all of the list items would appear at the same time). Then it is faded in using the fade In() method.   
+3. The final part creates an event listener that waits for the user to click on a list item. When they do,   
+it will fade that item out to remove it from the list (the fade will take 700 milliseconds).   
+
