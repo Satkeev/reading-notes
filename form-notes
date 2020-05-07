@@ -1,0 +1,53 @@
+### FORMS
+
+>Form controls live inside a <form> element. This element should always carry  
+the action attribute and will usually have a method and id attribute too.  
+action Every <form> element requires an action attribute. Its value is the URL   
+for the page on the server that will receive the information in the form when it is submitted.  
+method Forms can be sent using one of two methods: get or post.  
+With the get method, the values from the form are added to the end of the URL specified in the   
+action attribute. The get method is ideal for:  
+short forms (such as search  ● boxes)  
+when you are just retrieving  ● data from the web server (not sending information that should   
+be added to or deleted from a database)  
+<form action="http://www.example.com/subscribe.php"  method="get"> <p>This is where the form controls  
+will appear.  </p> </form> chapter-07/form-structure.html HtMl  
+
+### Form structure  
+
+>With the post method the values are sent in what are known as HTTP headers. As a rule of thumb you  
+should use the post method if your form:  
+allows users to upload a file   
+is very long       
+contains sensitive data (e.g. passwords)  
+adds information to, or   deletes information from, a database  
+If the method attribute is not used, the form data will be sent using the get method.  
+id We look at the id attribute on page 183, but the value is used to identify the f  
+orm distinctly from other elements on the page (and is often used by scripts —   
+such as those that check you have entered information into fields that require values).  
+
+### DIFFERENT EVENT TYPES  
+
+>Here is a selection of the events that occur in the browser while you are browsing the web.   
+Any of these events can be used to trigger a function in your JavaScript code.   
+UIEVENTS Occur when a user interacts with the browser's user interface (UI) rather than the web page   
+# EVENT DESCRIPTION     
+>load Web page has finished loading   
+unload Web page is unloading (usually because a new page was requested)   
+error Browser encounters a JavaScript error or an asset doesn't exist   
+resize Browser window has been resized   
+scroll User has scrolled up or down the page   
+KEYBOARD EVENTS Occur when a user interacts with the keyboard (see also input event)   
+EVENT DESCRIPTION   
+keydown User first presses a key (repeats while key is depressed)   
+keyup User releases a key   
+keypress Character is being inserted (repeats while key is depressed)   
+MOUSE EVENTS Occur when a user interacts with a mouse. trackpad, or touchscreen   
+EVENT DESCRIPTION   
+click User presses and releases a button over the same element   
+dbl click User presses and releases a button twice over the same element   
+moused own User presses a mouse button while over an element   
+mouseup User releases a mouse button while over an element   
+mousemove User moves the mouse (not on a touchscreen) 
+mouseover User moves the mouse over an element (not on a touchscreen) 
+mouseout User moves the mouse off an element (not on a touchscreen) 
