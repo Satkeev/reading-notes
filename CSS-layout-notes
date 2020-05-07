@@ -1,0 +1,55 @@
+### EXECUTION CONTEXT & HOISTING 
+
+>Each time a script enters a new execution context, there are two phases of activity:   
+1: PREPARE   
+• The new scope is created • Variables, functions, and arguments are created • The value of the this keyword is determined   
+Understanding that these two phases happen helps with understanding a concept called hoisting. You may have seen that you can:   
+• Call functions before they have been declared (if they were created using function declarations - not function expressions,  
+• Assign a value to a variable that has not yet been declared     
+This is because any variables and functions within each execution context are created before they are executed.   
+The preparation phase is often described as taking all of the variables and functions and hoisting them to the  
+top of the execution context. Or you can think of them as having been prepared.   
+Each execution context also creates its own vari ab 1 es object. This object contains details of all of the variables,    
+functions, and parameters for that execution context.   
+
+### ERROR HANDLING & DEBUGGING   
+>2: EXECUTE    
+• Now it can assign values to variables • Reference functions and run their code • Execute statements   
+You may expect the following to fail, because greetuser() is called before it has been defined:   
+var greeting= greetUser{); function greetUser() { II Create greeting   
+It works because the function and first statement are in the same execution context, so it is treated like this:   
+function greetUser() II Create greeting } var greeting= greetUser{);    
+The following would would fail because greetuser() is created within the getName () function's context:   
+var greeting= greetUser(); function getName() { function greetUser() II Create greeting } II Return name with greeting   
+
+###  UNDERSTANDING ERRORS 
+
+>If a JavaScript statement generates an error, then it throws an exception. At that point,   
+the interpreter stops and looks for exception-handling code.   
+If you are anticipating that something in your code may cause an error, you can use a set of  
+statements to handle the error (you meet them on p480). This is important because if the error is  
+not handled, the script will just stop processing and the user will not know why. So exception-handling   
+code should inform users when there is a problem.   
+function greetUser() 4 • 11 Interpreter 1 ooks here }   
+function getName() {   
+• II Imagine this had an error II It was caused by greetUser() }   
+t» var greeting= greetUser(); C» alert(greeting);   
+
+##ERROR HANDLING & DEBUGGING   
+
+>Whenever the interpreter comes across an error, it will look for error-handling code.   
+In the diagram below, the code has the same structure as the code you saw in the diagrams  
+at the start of the chapter. The statement at step 1 uses the function in step 2, which in  
+turn uses the function in step 3. Imagine that there has been an error at step 3.   
+When an exception is thrown, the interpreter stops and checks the current execution    
+context for exception-handling code. So if the error occurs in the getName () function (3),  
+the interpreter starts to look for error handling code in that function.   
+If an error happens in a function and the function does not have an exception handler,   
+the interpreter goes to the line of code that called the function. In this case, the get   
+Name () function was called by greetUser(), so the interpreter looks for exceptionhandling  
+code in the greetUser() function (2). If none is found, it continues to the next level,  
+checking to see if there is code to handle the error in that execution context. It can   
+continue until it reaches the global context, where it would have to it terminate the script,  
+and create an Error object.   
+
+So it is going through the stack looking for errorhandling code until it gets to the global context. If there is still no error handler, the script stop
