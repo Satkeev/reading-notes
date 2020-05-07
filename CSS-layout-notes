@@ -51,5 +51,6 @@ code in the greetUser() function (2). If none is found, it continues to the next
 checking to see if there is code to handle the error in that execution context. It can   
 continue until it reaches the global context, where it would have to it terminate the script,  
 and create an Error object.   
+So it is going through the stack looking for errorhandling code until it gets to the global context.  
+If there is still no error handler, the script stop.  
 
-So it is going through the stack looking for errorhandling code until it gets to the global context. If there is still no error handler, the script stop
