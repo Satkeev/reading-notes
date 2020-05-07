@@ -1,0 +1,70 @@
+### TABLES
+
+><th>
+The <th> element is used just like the  <td> element but its purpose is to represent 
+the heading for either a column or a row. (The th stands for table heading.)    
+Even if a cell has no content, you should still use a <td> or <th> element to   
+represent the presence of an empty cell otherwise the table will not render correctly. 
+(The first cell in the first row of this example shows an empty cell.)  
+
+>Using <th> elements for headings helps people who use screen readers, improves the   
+ability for search engines to index your pages, and also enables you to control the  
+appearance of tables better when you start to use CSS.  
+You can use the scope attribute on the <th> element to indicate whether it is a heading for   
+a column or a row. It can take the values: row to indicate a heading for a row or col to   
+indicate a heading for a column.  
+Browsers usually display the content of a <th> element in bold and in the middle of the cell.  
+<table>  <tr>    <th></th>    <th scope="col">Saturday</th>    <th scope="col">Sunday</th>
+</tr> 
+<tr>     
+<th scope="row">Tickets sold:</th>    
+<td>120</td>    <td>135</td>  </tr>    
+<tr>      
+<th scope="row">Total sales:</th>  
+<td>$600</td>    <td>$675</td>    
+</tr>   
+</table> chapter-06/table-headings.htmlH tMl 
+
+
+### CREATING OBJECTS USING CONSTRUCTOR SYNTAX   
+
+>On the right, an empty object called hote 1 is created using the constructor function.   
+Once it has been created, three properties and a method are then assigned to the object.   
+(If the object already had any of these properties, this would overwrite the values in those properties.)   
+To access a property of this object, you can use dot notation, just as you can with any object.   
+For example, to get the hotel's name you could use: hotel .name   
+Similarly, to use the method, you can use the object name followed by the method name: hotel.checkAvailability()   
+ 
+### FUNCTIONS, METHODS & OBJECTS 
+
+>c3/js/object-constructor.js   
+var hotel = new Object();   
+hotel.name= 'Park'; hotel.rooms = 120; hotel .booked = 77; hotel .checkAvailability = function() return this.rooms - this.booked; } ;   
+JAVASCRIPT    
+var elName = document.getElementByid('hotelName'); elName.textContent = hotel .name;   
+var elRooms = document.getElementByid('rooms'); elRooms.textContent = hotel .checkAvailability(};   
+
+
+### CREATE & ACCESS OBJECTS CONSTRUCTOR NOTATION   
+JAVASCRIPT c03/js/multiple-objects.js   
+function Hotel (name, rooms, booked) { this.name = name; this.rooms = rooms; this.booked = booked;   
+this.checkAvailability = function() return this.rooms - this.booked; } ;   
+var quayHotel var parkHotel   
+new Hotel('Quay', 40, 25); new Hotel( 'Park', 120, 77);   
+var details!= quayHotel .name + ' rooms : '; detailsl += quayHotel.checkAvailability();  
+var elHotell = docurnent.getElementByid('hotell'); elHotell.textContent =details!;   
+var details2 = parkHotel .name+ ' rooms: ';   
+detai ls2 += parkHotel.checkAvailability(); var e1Hotel2 = document.getElementByid('hotel2');  
+elHotel2.textContent = details2;   
+
+>To get a better idea of why you might want to create multiple objects on the same page,   
+here is an example that shows room availability in two hotels.     
+First, a constructor function defines a template for the hotels. Next, two different instance    
+s of this type of hotel object are created. The first represents a hotel called Quay and the second a hotel called Park.     
+Having created instances of these objects, you can then access their properties and methods using the same dot   
+notation that you use with all other objects.   
+In this example, data from both objects is accessed and written into the page. (The HTML for   
+this example changes to accommodate the extra hotel.)   
+For each hotel, a variable is created to hold the hotel name, followed by space, and the word rooms.   
+The line after it adds to that variable with the number of available rooms in that hotel.   
+(The+= operator is used to add content to an existing variable.)   
