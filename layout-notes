@@ -1,0 +1,39 @@
+### LISTS, TABLES FORMS  
+
+>ol { list-style-type: lower-roman;}  
+The list-style-type property allows you to control the shape or style of   
+a bullet point (also known as a marker).   
+It can be used on rules that apply to the <ol>, <ul>, and <li> elements.  
+Unordered Lists For an unordered list you can use the following values:  
+   none   disc   circle   square  
+ordered Lists For an ordered (numbered) list you can use the following values: 
+decimal 1   2   3  
+decimal-leading-zero 01   02   03  
+lower-alpha a   b   c  
+upper-alpha A   B   C  
+lower-roman i.   ii.   iii.  
+upper-roman I   II   III  
+<h1>The Complete Poems</h1> <h2>Emily Dickinson</h2> <ol> <li>Life</li> <li>Nature</li>   
+<li>Love</li> <li>Time and Eternity</li> <li>The Single Hound</li> </ol>   
+
+### LISTS, TABLES AND FORMS
+><h1>First Edition Auctions</h1> <table> <tr>  <th>Author</th>  <th>Title</th>    
+<th class="money">Reserve Price</th>  <th class="money">Current Bid</th> </tr> <tr>  
+<td>E.E. Cummings</td>  <td>Tulips & Chimneys</td>  <td class="money">$2,000.00</td>  
+<td class="money">$2,642.50</td> </tr> <tr class="even">  <td>Charles d'Orleans</td>   
+<td>Poemes</td>  <td class="money"></td>  <td class="money">$5,866.00</td> </tr> <tr>   
+<td>T.S. Eliot</td>  <td>Poems 1909 - 1925</td>  <td class="money">$1,250.00</td>   
+<td class="money">$8,499.35</td> </tr> <tr class="even">  <td>Sylvia Plath</td>   
+<td>The Colossus</td>  <td class="money"></td>  <td class="money">$1031.72</td> </tr>  
+</table> chapter-14/table-properties.html HtMl  
+You have already met several properties that are commonly used with tables. Here we will  
+put them together in a single example using the following:  
+width to set the width of the table  
+padding to set the space between the border of each table cell and its content  
+text-transform to convert the content of the table headers to uppercase  
+letter-spacing, font-size to add additional styling to the content of the table headers  
+border-top, border-bottom to set borders above and below the table headers  
+text-align to align the writing to the left of some table cells and to the right of the others  
+background-color to change the background color of the alternating table rows  
+:hover to highlight a table row when a user's mouse goes over it  
+tabLe ProPerties  
