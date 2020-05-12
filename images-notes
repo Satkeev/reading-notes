@@ -28,13 +28,19 @@ You can use a background image behind the box  created by any element on a page.
 Background images can appear just once or be   repeated across the background of the box.  
 You can create image rollover effects by moving the   background position of an image.    
 To reduBrainstorm
-List down the words that someone might type into Google to find your site. Be sure to include the various topics, products or services your site is about.
-It often helps to ask other people what words they would use to find your site because people less familiar with a topic might use different terms than you. (In particular, they are less likely to use industry-specific jargon.)
-Your list may include some keyword phrases (not just individual words) if you have topics which are described by more than one word.
+List down the words that someone might type into Google to find your site. Be sure to include   
+the various topics, products or services your site is about.  
+It often helps to ask other people what words they would use to find your site because people  
+less familiar with a topic might use different terms than you. (In particular, they are less  
+likely to use industry-specific jargon.)  
+Your list may include some keyword phrases (not just individual words) if you have topics which   
+are described by more than one word.  
 2: organize
 Group the keywords into separate lists for the different sections or categories of your website.
-For example, if your website was a pet shop you might have different categories for different animals (such as dogs, cats and rabbits).
-On a large site you may break this up further into sub-categories (for example, separate groups for different pet food brands).
+For example, if your website was a pet shop you might have different categories for different  
+animals (such as dogs, cats and rabbits).  
+On a large site you may break this up further into sub-categories (for example, separate groups for  
+different pet food brands).  
 
 ### HoW to identify keyWords and Phrases
 
@@ -77,11 +83,14 @@ You will want to check the size of mailbox you are allowed and the number of mai
 serVer-side languages and dataBases If you are using a content management system, it will likely  
 use a server-side programming language and a database (such as PHP with a MySQL database,  
 or ASP.Net with a SQL Server database). Be sure to check that your hosting company supports th
-e technologies your software needs to run.  
+ technologies your software needs to run.  
 It is often worth searching for reviews of a hosting company to see what other people's experience  
 has been with a hosting company. Unfortunately, you often can only tell how good a hosting company  
 is when something goes wrong, at which point you find out how they are able to help you (so you can  
 expect to see a few negative reviews for any company). 
+There are a number of online services that allow you to point your domain name to their servers.  
+Blogging platforms such as WordPress.com, Tumblr, and Posterous, or e-commerce platforms such as Big Cartel  
+and Shopify provide the servers that your site is hosted on. If you are using a platform like this you will  
+not need your own hosting for the website, although you often still need hosting for your email. If this  
+is the case, some web hosting companies offer packages that will just offer email services.
 
-There are a number of online services that allow you to point your domain name to their servers. Blogging platforms such as WordPress.com, Tumblr, and Posterous, or e-commerce platforms such as Big Cartel and Shopify provide the servers that your site is hosted on. If you are using a platform like this you will not need your own hosting for the website, although you often still need hosting for your email. If this is the case, some web hosting companies offer packages that will just offer email services.
-hosted 
