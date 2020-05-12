@@ -1,0 +1,87 @@
+###  IMAGES  
+
+>img.large {  width: 500px;  height: 500px;} img.medium {  width: 250px;  height: 250px;} img.small 
+{  width: 100px;  height: 100px;}  
+CSS   
+><img src="images/magnolia-large.jpg"   class="large" alt="Magnolia" /> <img src="images/magnolia-medium.jpg"  
+class="medium" alt="Magnolia" /> <img src="images/magnolia-small.jpg"   class="small" alt="Magnolia" />  
+chapter-16/image-sizes.html   
+HTML  
+>You can control the size of an image using the width and height properties in CSS, just like you can for  
+any other box.   
+Specifying image sizes helps pages to load more smoothly because the HTML and CSS code will often load   
+before the images, and telling the browser how much space to leave for an image allows it to render  
+the rest of the page without waiting for the image to download.  
+You might think that your site is likely to have images of all different sizes, but a lot of sites use the  
+same sized image across many of their pages.   
+For example, an e-commerce site tends to show product photos at the same size. Or, if your site is designed   
+on a grid, then you might have a selection of image sizes that are commonly used on all pages, such as:  
+Small portrait: 220 x 360 Small landscape: 330 x 210 Feature photo: 620 x 400    
+Whenever you use consistently sized images across a site, you can use CSS to control the dimensions of the images,   
+instead of putting the dimensions in the HTML.
+controllIng sIzes of Images In css.  
+
+>You can specify the dimensions of images using CSS. This is very helpful when you use the same sized  
+images on several pages of your site.    
+Images can be aligned both horizontally and vertically   using CSS.   
+You can use a background image behind the box  created by any element on a page.   
+Background images can appear just once or be   repeated across the background of the box.  
+You can create image rollover effects by moving the   background position of an image.    
+To reduBrainstorm
+List down the words that someone might type into Google to find your site. Be sure to include the various topics, products or services your site is about.
+It often helps to ask other people what words they would use to find your site because people less familiar with a topic might use different terms than you. (In particular, they are less likely to use industry-specific jargon.)
+Your list may include some keyword phrases (not just individual words) if you have topics which are described by more than one word.
+2: organize
+Group the keywords into separate lists for the different sections or categories of your website.
+For example, if your website was a pet shop you might have different categories for different animals (such as dogs, cats and rabbits).
+On a large site you may break this up further into sub-categories (for example, separate groups for different pet food brands).
+
+### HoW to identify keyWords and Phrases
+
+>There are several tools that let you enter your keywords and then they will suggest additional   
+keywords you might like to consider, such as: adwords.google.co.uk/ select/KeywordToolExternal  
+(When using this tool, select the "exact match" option rather than "broad match.")   
+www.wordtracker.com www.keyworddiscovery.com  
+Once these tools have suggested additional keywords, add the relevant options to your lists.   
+(Keyword tools will most likely suggest some terms that are irrelevant so do omit any that do not 
+seem appropriate).ce the number of images your browser has to   load, you can create image sprites  .    
+
+### In order to put your site on the web you will need a domain name and web hosting.  
+>domain names & hosting    
+domain names WeB hosting
+Your domain name is your web address (e.g. google.com or bbc. co.uk). There are many websites that  
+allow you to register domain names. Usually you will have to pay an annual fee to keep that domain name.  
+These sites usually have a form that allows you to check whether your preferred domain name is  
+available, and because millions of domain names have already been registered, it might take you a while   
+to find the one that is right for your site.  
+A lot of sites that offer domain name registration also offer web hosting.  
+disk sPace This refers to the total size of all of the files that make up your site (all of the HTM  
+L and CSS files,  images and scripts).  
+BandWidth This is the amount of data the hosting company will send to your site's visitors  
+. If you imagine 10 people looked at every page on your site, then it would be the equivalent  
+to 10 times the amount of disk space you use.  
+BackuPs Check whether the hosting company performs backups on your site (and how often). Some only  
+create backups so that they can restore your website in the event of a server breaking. Others   
+allow access to backups (which can be helpful if you accidentally break the site when updating it).  
+So that other people can see your site, you will need to upload it to a web server. Web servers  
+are special computers that are constantly connected to the Internet. They are specially set up  
+to serve web pages when they are requested.   
+With the exception of some very large sites, most websites live on web servers run by web hosting  
+companies. This is usually far cheaper and more reliable than trying to run your own web servers. 
+
+>There are lots of different types of hosting on offer. We will now take a look at some of the key   
+things that will help you choose which hosting company to use.  
+488PRACTICAL INFORMATION  
+email accounts Most hosting companies will provide email servers with their web hosting packages  
+You will want to check the size of mailbox you are allowed and the number of mailboxes you can use.  
+serVer-side languages and dataBases If you are using a content management system, it will likely  
+use a server-side programming language and a database (such as PHP with a MySQL database,  
+or ASP.Net with a SQL Server database). Be sure to check that your hosting company supports th
+e technologies your software needs to run.  
+It is often worth searching for reviews of a hosting company to see what other people's experience  
+has been with a hosting company. Unfortunately, you often can only tell how good a hosting company  
+is when something goes wrong, at which point you find out how they are able to help you (so you can  
+expect to see a few negative reviews for any company). 
+
+There are a number of online services that allow you to point your domain name to their servers. Blogging platforms such as WordPress.com, Tumblr, and Posterous, or e-commerce platforms such as Big Cartel and Shopify provide the servers that your site is hosted on. If you are using a platform like this you will not need your own hosting for the website, although you often still need hosting for your email. If this is the case, some web hosting companies offer packages that will just offer email services.
+hosted 
