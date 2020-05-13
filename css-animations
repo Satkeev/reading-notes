@@ -1,0 +1,63 @@
+### TRANSROMS
+
+>With CSS3 came new ways to position and alter elements. Now general layout techniques can be revisited  
+with alternative ways to size, position, and change elements. All of these new techniques are made possible   
+by the transform property.   
+The transform property comes in two different settings, two-dimensional and three-dimensional. Each   
+of these come with their own individual properties and values.  
+Within this lesson we’ll take a look at both two-dimensional and three-dimensional transforms. Generally   
+speaking, browser support for the transform property isn’t great, but it is getting better every day. For  
+the best support vendor prefixes are encouraged, however you may need to download the nightly version of  
+Chrome to see all of these transforms in action.  
+
+## 2D Rotate
+>The transform property accepts a handful of different values. The rotate value provides the ability    
+to rotate an element from 0 to 360 degrees. Using a positive value will rotate an element clockwise,   
+and using a negative value will rotate the element counterclockwise. The default point of rotation  
+is the center of the element, 50% 50%, both horizontally and vertically. Later we will discuss how  
+you can change this default point of rotation.  
+
+# HTML
+><figure class="box-1">Box 1</figure> 
+<figure class="box-2">Box 2</figure> 
+             
+# CSS  
+>.box-1 {  
+  transform: rotate(20deg);  
+}  
+.box-2 {  
+  transform: rotate(-55deg);    
+  }  
+  
+ ### Transitions  
+  
+>As mentioned, for a transition to take place, an element must have a change in state, and different   
+styles must be identified for each state. The easiest way for determining styles for different states  
+is by using the :hover, :focus, :active, and :target pseudo-classes.  
+There are four transition related properties in total, including transition-property, transition-duration,    
+transition-timing-function, and transition-delay. Not all of these are required to build a transition, with  
+the first three are the most popular.   
+In the example below the box will change its background color over the course of 1 second in a linear fashion.  
+
+>.box {  
+  background: #2db34a;  
+  transition-property: background;  
+  transition-duration: 1s;  
+  transition-timing-function: linear;  
+}  
+.box:hover {  
+  background: #ff7b29;  
+}  
+
+### Transition Timing  
+
+>The transition-timing-function property is used to set the speed in which a transition will move.  
+Knowing the duration from the transition-duration property a transition can have multiple speeds   
+within a single duration. A few of the more popular keyword values for the transition-timing-function   
+property include linear, ease-in, ease-out, and ease-in-out.  
+The linear keyword value identifies a transition moving in a constant speed from one state to another.   
+The ease-in value identifies a transition that starts slowly and speeds up throughout the transition,   
+while the ease-out value identifies a transition that starts quickly and slows down throughout the  
+transition. The ease-in-out value identifies a transition that starts slowly, speeds up in the middle,   
+then slows down again before ending.  
+
